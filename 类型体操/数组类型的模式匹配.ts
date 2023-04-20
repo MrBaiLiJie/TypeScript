@@ -38,3 +38,4 @@ type popArr1 = PopArr<[]> // never
 type ShiftArr<T extends unknown[]> = T extends [infer R,...infer Rest ] ? [...Rest] : never 
 type shiftArr = ShiftArr<C>  // ['2'，3]
 type shiftArr1 = ShiftArr<[]> // never
+
